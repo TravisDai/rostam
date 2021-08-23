@@ -11,7 +11,6 @@ $ git clone https://github.com/google/protobuf.git
 $ cd protobuf
 $ git submodule update --init --recursive
 $ ./autogen.sh
-$ ./autogen.sh
 $ make
 $ make check
 $ sudo make install
