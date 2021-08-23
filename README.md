@@ -6,6 +6,16 @@ We use [Gurobi](https://www.gurobi.com) for solving the Integer Linear Programs 
 ```
 $ ./autogen.sh
 $ ./configure --without-gurobi
+$ sudo apt-get install autoconf automake libtool curl make g++ unzip -y
+$ git clone https://github.com/google/protobuf.git
+$ cd protobuf
+$ git submodule update --init --recursive
+$ ./autogen.sh
+$ ./autogen.sh
+$ make
+$ make check
+$ sudo make install
+$ sudo ldconfig
 $ make -j$(nproc)
 $ sudo make install
 ```
