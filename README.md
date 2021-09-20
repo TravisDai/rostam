@@ -20,6 +20,7 @@ $ sudo make install
 ```
 If you have Gurobi installed, just change the configure flag to  ``./configure --with-gurobi  LDFLAGS=-L/path/to/gurobi/lib CPPFLAGS=-I/path/to/gurobi/include`` in the commands above. We suggest using ``CPPFLAGS=-isystem/path/to/gurobi/include`` instead, to prevent warnings of the gurobi being treated as errors too.  
 
+
 ## SiPML
 To simulate a tranining job on an electrical interconnect run:
 ```
