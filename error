@@ -15,3 +15,10 @@ libprotoc locates in /usr/bin is uninstalled.
 I now try the method in the following link:
 https://stackoverflow.com/questions/35896335/how-can-i-uninstall-protobuf-3-0-0
 
+for the error:
+op.cc:78:18: error: catching polymorphic type ‘class std::out_of_range’ by value [-Werror=catch-value=]
+   78 |     catch ( std::out_of_range ) {
+
+I open op.cc in /src/executor
+
+by adding "catch (std::out_of_range const&)"
