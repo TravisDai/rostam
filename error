@@ -1,0 +1,17 @@
+I met a error for the protobuf conflic:
+
+When I check my system with:
+usr/bin/protoc --version
+libprotoc 3.6.1 in /usr/bin/protoc
+
+protoc --version
+libprotoc 3.17.3
+
+Then I try uninstall by using :
+sudo apt-get remove protobuf-compiler
+
+libprotoc locates in /usr/bin is uninstalled.
+
+I now try the method in the following link:
+https://stackoverflow.com/questions/35896335/how-can-i-uninstall-protobuf-3-0-0
+
